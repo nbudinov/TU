@@ -9,13 +9,13 @@ public class ArrayClass {
 		this.fillArray(arrLen);
 	}
 	
-	public void changeNumbers() {
+	public synchronized void changeNumbers() {
 		for (int i = 0; i < this.array.length; i++) {
 			this.array[i] *= 10;
 		}
 	}
 	
-	public void sortArray() {
+	public synchronized void sortArray() {
 		Arrays.sort(this.array);
 	}
 	
